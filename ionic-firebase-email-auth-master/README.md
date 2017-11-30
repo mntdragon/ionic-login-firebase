@@ -187,4 +187,4 @@ export class EmailValidator {
 -- Same as login, it takes the value of the form field, sends it to the AuthProvider service and displays a loading component while we get Firebase’s response
 
 ** signup.ts
-
+exactly the same as the login page but changing the forms name
