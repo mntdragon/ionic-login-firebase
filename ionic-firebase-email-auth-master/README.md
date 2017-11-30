@@ -36,6 +36,7 @@ All of those functional and connected with an authentication provider.
 ------rootPage: any;
 -----onAuthStateChanged(): it adds an observer for auth state changes, meaning that whenever an authentication change happens, it will trigger the observer and the function inside it will run again.
 ------inside app.component.ts constructor add
+```js
 const unsubscribe = firebase.auth().onAuthStateChanged( user => {
   if (!user) {
     this.rootPage = 'LoginPage';
@@ -45,6 +46,6 @@ const unsubscribe = firebase.auth().onAuthStateChanged( user => {
     unsubscribe();
   }
 });
-
+```
 
 
